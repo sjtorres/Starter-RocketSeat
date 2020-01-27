@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Exercicio - 01</title>
+</head>
+<body>
+  
+
+  <script>
+
+    function exibirMsg (endereco) {
+      return (
+        "O " + endereco.nome + " mora em " + endereco.cidade + "/"
+        + endereco.uf + ", " + " no bairro " + endereco.bairro + ", "
+        + " na rua " + endereco.rua + " com o número " + endereco.numero
+        + "."
+      )
+    }
+
+    var endereco = {
+      nome: 'Sandro',
+      rua: 'Antenor Grigoli',
+      numero: 2140,
+      bairro: 'Jardim Iguaçu',
+      cidade: 'Paranavaí',
+      uf: 'PR'
+    }
+
+    console.log(exibirMsg(endereco));
+  
+  </script>
+</body>
+</html>
