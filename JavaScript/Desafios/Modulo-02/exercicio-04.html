@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Modulo 02 - Exercicio 04</title>
+</head>
+<body>
+
+  <input type="text" name="nome" />
+  <button onclick="adicionar()" >Adicionar</button>
+  <ul></ul>
+
+  <script>
+  
+    var nomes = ["Jose", "Maria", "Tonhão"];
+    var listEelement = document.querySelector('ul');
+    var inputElement = document.querySelector('input');
+
+    function addItem (text) {
+      var liElement = document.createElement('li');
+      var textElement = document.createTextNode(text);
+
+      liElement.appendChild(textElement);
+      listEelement.appendChild(liElement);
+    }
+
+    function adicionar () {
+      addItem(inputElement.value);
+      inputElement.value = "";
+    }
+
+    for (nome of nomes) {
+      addItem(nome);
+    }
+  
+  </script>
+</body>
+</html>
