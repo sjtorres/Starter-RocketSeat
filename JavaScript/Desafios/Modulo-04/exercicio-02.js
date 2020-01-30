@@ -20,4 +20,7 @@ function listRepositories() {
     .then(function(response) {
       renderRepositories(response.data);
     })
+    .catch(function(error) {
+      console.log('Error 404')
+    })
 }
