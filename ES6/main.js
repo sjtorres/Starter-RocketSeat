@@ -1,25 +1,8 @@
-const arr = [1, 3, 4, 5, 8, 9];
+import { soma } from './funcoes';
+console.log(soma(1, 2))
 
-const newArr = arr.map(function(item) {
-  return item * 2;
-})
 
-console.log(newArr);
+const nome = 'Sandro';
+const idade = 47;
 
-const sum = arr.reduce(function(total, next) {
-  return total + next;
-})
-
-console.log(sum)
-
-const filtrar = arr.filter(function(item) {
-  return item % 2 === 1;
-})
-
-console.log(filtrar)
-
-const encontrar = arr.find(function(item) {
-  return item === 4;
-})
-
-console.log(encontrar)
+console.log(`Meu nome é ${nome} e tenho ${idade} anos.`)
