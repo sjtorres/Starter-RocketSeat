@@ -90,11 +90,11 @@
 /*!********************!*\
   !*** ./funcoes.js ***!
   \********************/
-/*! exports provided: soma */
+/*! exports provided: soma, sub, mult, divi */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"soma\", function() { return soma; });\nfunction soma(a, b) {\n  return a + b;\n}\n\n//# sourceURL=webpack:///./funcoes.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"soma\", function() { return soma; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"sub\", function() { return sub; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"mult\", function() { return mult; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"divi\", function() { return divi; });\n// export default function soma(a, b) {\n//   return a + b\n// }\nfunction soma(a, b) {\n  return a + b;\n}\nfunction sub(a, b) {\n  return a - b;\n}\nfunction mult(a, b) {\n  return a * b;\n}\nfunction divi(a, b) {\n  return a / b;\n}\n\n//# sourceURL=webpack:///./funcoes.js?");
 
 /***/ }),
 
@@ -106,7 +106,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _funcoes__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./funcoes */ \"./funcoes.js\");\n\nconsole.log(Object(_funcoes__WEBPACK_IMPORTED_MODULE_0__[\"soma\"])(1, 2));\nvar nome = 'Sandro';\nvar idade = 47;\nconsole.log(\"Meu nome \\xE9 \".concat(nome, \" e tenho \").concat(idade, \" anos.\"));\n\n//# sourceURL=webpack:///./main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _funcoes__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./funcoes */ \"./funcoes.js\");\n// import { soma, mult, divi, sub } from './funcoes'\n\nconsole.log(_funcoes__WEBPACK_IMPORTED_MODULE_0__[\"soma\"](5, 4));\nconsole.log(_funcoes__WEBPACK_IMPORTED_MODULE_0__[\"sub\"](5, 4));\nconsole.log(_funcoes__WEBPACK_IMPORTED_MODULE_0__[\"mult\"](5, 4));\nconsole.log(_funcoes__WEBPACK_IMPORTED_MODULE_0__[\"divi\"](5, 4)); // console.log(soma(1, 2))\n// console.log(sub(5, 2))\n// console.log(mult(5, 2))\n// console.log(divi(5, 2))\n\nvar nome = 'Sandro';\nvar idade = 47;\nconsole.log(\"Meu nome \\xE9 \".concat(nome, \" e tenho \").concat(idade, \" anos.\"));\n\n//# sourceURL=webpack:///./main.js?");
 
 /***/ })
 
