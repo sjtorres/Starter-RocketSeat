@@ -9,10 +9,10 @@ export default createStackNavigator({
     headerStyle: {
       backgroundColor: '#228B22',
     },
-    headerTitleStyle: {
-      flex: 1,
-      textAlign: 'center'
-    },
+    // headerTitleStyle: {
+    //   flex: 1,
+    //   textAlign: 'center'
+    // },
     headerTintColor: '#FFF'
   },
 });
